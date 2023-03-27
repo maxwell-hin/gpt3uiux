@@ -3,15 +3,29 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .gpt3__brand div {
     flex: 1;
     max-width: 150px;
     min-width: 120px;
-    margin: 1rem;
+    margin: 0.5rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .gpt3__brand.section__padding {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .gpt3__brand.section__padding {
+        padding: 0.5rem;
+        margin-left: 0;
+    }
 }
